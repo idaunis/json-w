@@ -21,7 +21,7 @@ the name is not found yet in the dictionary is added at the end of the
 dictionary. Building this way a model where the names that are most likely to
 appear will have the same reference. Yet if the replaced reference already
 exists in the newly created object structure, a star symbol `*` is used
-instead, to define a list multiple references.
+instead, to define a list of multiple references.
 
 For example the JSON array on page 7 of [RFC 4627]
  (https://www.ietf.org/rfc/rfc4627.txt) becomes:
