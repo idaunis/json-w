@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="utf-8">
+<title>JSON-W Example</title>
+</head>
+
+<body>
+
+<style type="text/css">
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  pre {
+    background: #272822;
+    color: #fff;
+    font-family: Consolas, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+</style>
+
+<script src="dist/jsonw.min.js"></script>
+
+<script type="text/javascript">
+  var json = [
+    {
+      "ID": 17,
+      "Name": "Acme Corporation",
+      "Address": "Nobel House, Regent Centre",
+      "Manager": { "FirstName": "John", "LastName": "Doe" },
+      "Employees": [
+        { "FirstName": "Brian", "LastName": "Hunt" },
+        { "FirstName": "Mick", "LastName": "Henning" }
+      ]
+    },
+    {
+      "ID": 18,
+      "Name": "The Empire",
+      "Address": "Milton Keynes Leisure Plaza",
+      "Manager": { "FirstName": "Ana", "LastName": "Johnsnon" },
+      "Employees": [
+        { "FirstName": "Erick", "LastName": "O\'Neil" },
+        { "FirstName": "George", "LastName": "Halloway" }
+      ]
+    }
+  ];
+
+  var jsonw = JSONW.encode(json);
+  var decoded = JSONW.decode(jsonw);
+
+  document.write('<pre><div style="color: #f00">Original JSON:</div>');
+  document.write(JSON.stringify(json) );
+
+  document.write('</pre><pre><div style="color: #0f0">JSON-W Representation:</div>');
+  document.write(JSON.stringify(jsonw) );
+
+  document.write('</pre><pre><div style="color: #f00">Decoded JSON:</div>');
+  document.write(JSON.stringify(decoded) );
+  document.write('</pre>');
+
+</script>
+</body>
+</html>
