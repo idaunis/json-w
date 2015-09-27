@@ -8,6 +8,9 @@ JSON-W(ordbook) is a JSON variant where the repeated occurrences of the
 objects names are replaced by their respective references in a dynamic
 dictionary.
 
+The algorithm described below offers a systematic procedure to `minimize`
+JSON documents as well as any structured data representation.
+
 
 Algorithm
 ---------
@@ -231,7 +234,7 @@ Code contributions
 ---
 
 Note: by contributing code to the JSON-W project in any form, including
-sendinga pull request via Github, a code fragment or patch via private email
+sending a pull request via Github, a code fragment or patch via private email
 or public discussion groups, you agree to release your code under the terms of
 the BSD 3-Clause License.
 
