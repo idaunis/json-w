@@ -84,7 +84,7 @@ This is the JSON-W representation which saves 26% of the data:
     "Address": "Nobel House, Regent Centre",
     "Manager": { "FirstName": "John", "LastName": "Doe" },
     "Employees": [
-      { "*5": [ "Brian", "Hunt" ] },
+      { "FirstName": [ "Brian", "Hunt" ] },
       { "*5": [ "Mick", "Henning" ] }
     ]
   },
